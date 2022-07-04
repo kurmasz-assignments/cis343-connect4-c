@@ -1,0 +1,16 @@
+name: Connect 4 Check
+on: 
+   workflow_dispatch:
+   push:
+      tags:
+         - checkMe*
+jobs:
+   run-instructor-tests:
+      runs-on: ubuntu-latest
+      steps:
+         - uses: actions/checkout@v3
+         - run: curl https://www.cis.gvsu.edu/~kurmasz/OpenAutograder/instructor_test.c --output test/instructor_test.c
+         - run: make studentTests
+         - run: ./studentTests
+         - run: make instructorTests
+         - run: ./instructorTests
