@@ -44,7 +44,7 @@ When implementing your game, you must use this interface (so I can run automated
    1. Copy a row, column, or diagonal into a separate array.  This is computationally inefficient; but, that's ok for this assignment because we are focusing on the interaction of programming languages and software design.
    2. Use function pointers.  This avoids the copying, but is considerably more difficult.  (When I tried it, I didn't think the code was any better as a result.  Maybe you can come up with a better design.)
 
-**!!! Important #2 !!!** Your game board must be dynamically allocated on the heap (as opposed to statically allocated on the stack). Putting the game board on the heap allows Valgrind to detect if you have any bugs that read and/or write memory outside of the game board.  In order to pass the automated tests, you code will have to run under Valgrind with no memory errors (neither leaks nor out-of-bounds issues).
+**!!! Important #2 !!!** Your game board must be dynamically allocated on the heap (as opposed to statically allocated on the stack). Putting the game board on the heap allows Valgrind to detect if you have any bugs that read and/or write memory outside of the game board.  In order to meet expectations for this assignment, your code will have to run under Valgrind with no memory errors (neither leaks nor out-of-bounds issues).
 
 ### Code Quality
 
@@ -64,12 +64,11 @@ You must use a Test Driven Development (TDD) workflow and write a complete set o
       If you use these files, the [Makefile](Makefile) should just work.  If you add/change files, you'll have to also adjust the `Makefile`.
    2. The [spec](spec) directory contains the system tests. These tests use Ruby's [RSpec](https://rspec.info/) framework.  You can add your tests to [c4_student_spec.rb](spec/c4_student_spec.rb), and/or add your own files.
    3. The [test](test) directory is for unit tests. If you are writing 
-     unit tests, you may add them to [student_test.c](test/student_test.c).  (If you use different/additional files you will have to adjust the Makefile accordingly.)
-   4. [Unity](https://github.com/ThrowTheSwitch/Unity) is the unit test framework. One of the authors (Mike Karlesky) is a GVSU alumnus.
+     unit tests, you may add them to [student_test.c](test/student_test.c).  (If you use different/additional files you will have to adjust the Makefile accordingly.)  The sample student tests use the [Unity](https://github.com/ThrowTheSwitch/Unity) unit test framework. One of the authors (Mike Karlesky) is a GVSU alumnus.
 
    
 2. Write a complete set of tests. Writing tests first is called _Test Driven Development_ (TDD) and will help you write better / less buggy code.  
-   1. Add your unit tests to [student_tests.c](test/student_tests.c) and/or [c4_student_spec.rb](spec/c4_student_spec.rb)
+   1. Add your tests to [student_tests.c](test/student_tests.c) and/or [c4_student_spec.rb](spec/c4_student_spec.rb)
    2. When your tests are complete, implement your Connect 4 game.  If you put your internal functions in [connect4_engine.c](src/connect4_engine.c) and your `main` in [c4.c](src/c4.c), then the Makefile will build your program without any further changes.
       1. `make studentTests` will compile your unit tests against your code.
       2. `make c4` will build your game
@@ -95,7 +94,7 @@ You must use a Test Driven Development (TDD) workflow and write a complete set o
 
 When your initial tests are complete, check in your code with "[Check Tests]" in the commit message.
 
-When your project is complete (has a complete set of tests, has a working game, passes my tests, and is well-formatted and well-documented), 
+When your project is complete (has a complete set of tests, has a working game, passes my automated tests, passes Valgrind, and is well-formatted and well-documented), 
 check in your code with "[Grade Me]" in the commit message.
 
 **Important**: Just because your code passes the GitHub tests, does _not_ mean it meets all the requirements. The GitHub tests do not, for example, check the user interface.  They also don't check the completeness of your unit tests or the quality of your code.
