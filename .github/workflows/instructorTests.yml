@@ -9,8 +9,6 @@ jobs:
       runs-on: ubuntu-latest
       steps:
          - uses: actions/checkout@v3
-         - run: curl https://www.cis.gvsu.edu/~kurmasz/OpenAutograder/instructor_test.c --output test/instructor_test.c
-         - run: make studentTests
-         - run: ./studentTests
-         - run: make instructorTests
-         - run: ./instructorTests
+         - run: curl https://www.cis.gvsu.edu/~kurmasz/Autograder/c4_instructor_spec.rb --output spec/c4_instructor_spec.rb
+         - run: rspec spec/c4_instructor_spec.rb
+         - run: rspec spec/c4_student_spec.rb
