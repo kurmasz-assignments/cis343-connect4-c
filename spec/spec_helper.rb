@@ -60,7 +60,7 @@ def test_c4(input, num_rows=6, num_columns=7, win_length=4)
     command = "#{c4_exec} #{num_rows}x#{num_columns} #{win_length}"
     input_with_newlines = input.chars.join("\n")
     
-    puts "Running =>#{command}<= with =>#{input}<=" # if debug_mode?
+    puts "Running =>#{command}<= with =>#{input}<=" if debug_mode?
     results = run(command, input_with_newlines)
     puts "Observed out: #{results[:out]}" if debug_mode?
     puts "Observed error: #{results[:err]}" if debug_mode?
