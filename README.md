@@ -2,6 +2,8 @@
 
 This assignment was originally prepared by Prof. Nandigam.
 
+Use this [GitHub Classroom link](https://classroom.github.com/a/mC2Nf2pv) to create a repo for this project.
+
 ## Overview
 
 For this assignment you will implement the game [Connect 4](https://kevinshannon.dev/connect4) in C. 
@@ -59,7 +61,7 @@ You must use a Test Driven Development (TDD) workflow and write a complete set o
 
 ## Assignment Workflow
 
-1. Begin by following this [GitHub Classroom link](https;//foo.bar) and cloning the resulting repository.
+1. Begin by following this [GitHub Classroom link](https://classroom.github.com/a/mC2Nf2pv) and cloning the resulting repository.
    1. Your game code will go in the [src](src) directory.  This directory contains shell files that you should put your code in.
       If you use these files, the [Makefile](Makefile) should just work.  If you add/change files, you'll have to also adjust the `Makefile`.
    2. The [spec](spec) directory contains the system tests. These tests use Ruby's [RSpec](https://rspec.info/) framework.  You can add your tests to [c4_student_spec.rb](spec/c4_student_spec.rb), and/or add your own files.
