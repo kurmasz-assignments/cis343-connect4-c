@@ -4,6 +4,8 @@ This assignment was originally prepared by Prof. Nandigam.
 
 Use this [GitHub Classroom link](https://classroom.github.com/a/mC2Nf2pv) to create a repo for this project.
 
+This video provides an [introduction to Connect 4 and GitHub Classroom](https://youtu.be/nv1R7XPNneM).
+
 ## Overview
 
 For this assignment you will implement the game [Connect 4](https://kevinshannon.dev/connect4) in C. 
