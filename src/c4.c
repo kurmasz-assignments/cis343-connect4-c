@@ -16,6 +16,13 @@ int main(int argc, char* argv[]) {
 
 //************************************helper functions****************************************//
 
+//checks size of array
+int getArraySize(int[] array){
+    int size = 0;
+    size = sizeof array / sizeof array[0];
+    return size;
+}
+
 //getters for board rows************
 
 //returns rows of vertical in an array
