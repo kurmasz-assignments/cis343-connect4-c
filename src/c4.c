@@ -24,8 +24,10 @@ int[] getVertical(int[][] board){}
 //returns rows of horizontal in an array
 int[] getHorizontal(int[][] board){}
 
-//returns diagonal rows in an array
-int[] getDiagonal(int[][] board){}
+//returns diagonal rows in an array upward slope
+int[] getDiagonalUp(int startCol, int startRow, int col, int row, int[][] board){}
+//returns diagonal rows in an array upward slope
+int[] getDiagonalDown(int startCol, int startRow, int col, int row, int[][] board){}
 
 
 

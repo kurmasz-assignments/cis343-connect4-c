@@ -47,18 +47,77 @@ void sample_fail() {
 
 void sample_H_bottom(){
 
-correctOutput[] = {2,2,2,1,1,1};
-
+int correctOutput[] = {2,2,2,1,1,1};
+int row = 5;
+int size = 6;
 int array[6][6] =
 {{-1,-1,-1,-1,-1,-1},
 {-1,-1,-1,-1,-1,-1},
 {-1,-1,-1,-1,-1,-1},
 {-1,-1,-1,-1,-1,-1},
 {-1,-1,-1,-1,-1,-1},
-{2,2,2,1,1,1};
+{2,2,2,1,1,1}
+};
+
+TEST_ASSERT_EQUAL(correctOutput, getHorizontal(row, size, array));
 }
 
-TEST_ASSERT_EQUAL(correctOutput, getHorizontal(5,array));
+void sample_H_top(){
+
+int correctOutput[] = {1,2,1,1,1,2};
+int row = 0;
+int size = 6;
+int array[6][6] =
+{{1,2,1,1,1,2},
+{-1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,-1}
+};
+
+TEST_ASSERT_EQUAL(correctOutput, getHorizontal(row, size, array));
+}
+
+void sample_H_middle(){
+
+int correctOutput[] = {2,2,2,1,1,1};
+int row = 2;
+int size = 6;
+int array[6][6] =
+{{-1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,-1},
+{2,2,2,1,1,1},
+{-1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,-1}
+};
+
+TEST_ASSERT_EQUAL(correctOutput, getHorizontal(row, size, array));
+}
+
+//GetDiagonal tests
+void sample_D_Up_upperCorner(){
+
+int correctOutput[] = {1};
+int StartRow = 0;
+int StartCol = 0;
+int width = 6;
+int height = 6;
+
+int array[6][6] =
+{{1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,-1}
+};
+
+TEST_ASSERT_EQUAL(correctOutput, getHorizontal(row, size, array));
+}
+
+
 
 
 /////////////////////////////////////////////
