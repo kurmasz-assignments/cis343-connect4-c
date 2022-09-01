@@ -1,10 +1,16 @@
 #include "unity.h"
 #include "connect4.h"
 
+
+//NOTE : x_in_a_row(needed length of line to win, size of array to be passed, array) this is the format
+
+//test to see if board is built
 void setUp(void) {
     // set stuff up here
+
 }
 
+//test to see if proper exit message displayed
 void tearDown(void) {
     // clean-up stuff up here
 }
