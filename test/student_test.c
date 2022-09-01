@@ -10,9 +10,9 @@ void setUp(void) {
 
 }
 
-//test to see if proper exit message displayed
+
 void tearDown(void) {
-    // clean-up stuff up here
+
 }
 
 /////////////////////////////////////////////
@@ -30,6 +30,35 @@ void sample_fail() {
   int array[] = {2, 2, 3, 3, 4, 5, 7};
   TEST_ASSERT_EQUAL(3, x_in_a_row(2, 7, array));
 }
+
+/////////////////////////////////////////////
+//
+//diagonal, horizontal, and vertical getter tests
+//returns rows of vertical in an array
+//int[] getVertical(int[][] board){}
+//
+////returns rows of horizontal in an array
+//int[] getHorizontal(int[][] board){}
+//
+////returns diagonal rows in an array
+//int[] getDiagonal(int[][] board){}
+//
+/////////////////////////////////////////////
+
+void sample_H_bottom(){
+
+correctOutput[] = {2,2,2,1,1,1};
+
+int array[6][6] =
+{{-1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,-1},
+{2,2,2,1,1,1};
+}
+
+TEST_ASSERT_EQUAL(correctOutput, getHorizontal(5,array));
 
 
 /////////////////////////////////////////////
