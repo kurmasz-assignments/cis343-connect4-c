@@ -118,10 +118,57 @@ int[] actualOutput = getDiagonalUp(StartCol, StartRow, width, height, array);
 TEST_ASSERT_EQUAL(1, compareArrays(correctOutput, actualOutput));
 }
 
+void D_Up_upperCorner_size3(){
+
+int array[6][6] =
+{{-1,-1,1,-1,-1,-1},
+{-1,1,-1,-1,-1,-1},
+{1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,-1}
+};
+int correctOutput[] = {1,1,1};
+int StartRow = 2;
+int StartCol = 0;
+int width = 6;
+int height = 6;
+int[] actualOutput = getDiagonalUp(StartCol, StartRow, width, height, array);
+
+TEST_ASSERT_EQUAL(1, compareArrays(correctOutput, actualOutput));
+}
+
+void D_Up_lowerCorner(){
+
+int array[6][6] =
+{{-1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,-1},
+{-1,-1,-1,-1,-1,1}
+};
+int correctOutput[] = {1};
+int StartRow = 5;
+int StartCol = 5;
+int width = 6;
+int height = 6;
+int[] actualOutput = getDiagonalUp(StartCol, StartRow, width, height, array);
+
+TEST_ASSERT_EQUAL(1, compareArrays(correctOutput, actualOutput));
+}
+
+
 //tests for alphabet input
 void test_alphabet_to_column_true(){
     char a = 'a';
     TEST_ASSERT_EQUAL(0, getColumnNumber(a))
+}
+
+//test for last alphabet input
+void test)alphabet_to_column_p_true(){
+char o = 'o';
+TEST_ASSERT_EQUAL(15, getColumnNumber(o));
 }
 
 //test for quitting game

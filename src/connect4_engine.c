@@ -7,14 +7,30 @@
 #include "connect4.h"
 
 // You don't have to use this.  It's just here as a demo.
-int x_in_a_row(int x, int length, int array[]) {
-    
-    // This isn't correct.  It's just for demonstration purposes.
-    if (length >=2 && array[0] == array[1]) {
-        return array[0];
-    } else {
-        return -1;
-    };
+int x_in_a_row(int xToWin, int arraySize, int array[]) {
+
+    //counter to count identical X's
+    int counter = 0;
+    int last = 0;
+    int winner = 0;
+
+    for(int i = 0; i<arraySize; i++){
+    //if current element same as last increment counter by 1
+    if(array[i] == last){
+    counter++;
+    }
+    //if X different than last make last current and check if next is same
+    else{
+    last = array[i];
+    }
+    //if X right size save winner number
+    if(counter >= XToWin){
+    winner = last
+    }
+    }
+
+    return winner;
+
 }
 
 
@@ -140,10 +156,6 @@ int getColumnNumber(char column){
 
                 case 'o':
                 col = 15;
-                break;
-
-                case 'p':
-                col = 16;
                 break;
 
                 //quit -3 causes program to quit
