@@ -118,6 +118,21 @@ int[] actualOutput = getDiagonalUp(StartCol, StartRow, width, height, array);
 TEST_ASSERT_EQUAL(1, compareArrays(correctOutput, actualOutput));
 }
 
+//tests for alphabet input
+void test_alphabet_to_column_true(){
+    char a = 'a';
+    TEST_ASSERT_EQUAL(0, getColumnNumber(a))
+}
+
+//test for quitting game
+void test_alphabet_to_column_QUIT_true(){
+    char q = 'q';
+    TEST_ASSERT_EQUAL(-3, getColumnNumber(q))
+}
+
+
+
+
 //////////Riley tests
 
 void sample_V_Left(){

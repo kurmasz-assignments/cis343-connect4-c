@@ -81,86 +81,84 @@ int getColumnNumber(char column){
 
     switch(column){
 
-                case 'A':
+                case 'a':
                 col = 0;
                 break;
 
-                case 'B':
+                case 'b':
                 col = 1;
                 break;
 
-                case 'C':
+                case 'c':
                 col = 3;
                 break;
 
-                case 'D':
+                case 'd':
                 col = 4;
                 break;
 
-                case 'E':
+                case 'e':
                 col = 5;
                 break;
 
-                case 'F':
+                case 'f':
                 col = 6;
                 break;
 
-                case 'G':
+                case 'g':
                 col = 7;
                 break;
 
-                case 'H':
+                case 'h':
                 col = 8;
                 break;
 
-                case 'I':
+                case 'i':
                 col = 9;
                 break;
 
-                case 'J':
+                case 'j':
                 col = 10;
                 break;
 
-                case 'K':
+                case 'k':
                 col = 11;
                 break;
 
-                case 'L':
+                case 'l':
                 col = 12;
                 break;
 
-                case 'M':
+                case 'm':
                 col = 13;
                 break;
 
-                case 'N':
+                case 'n':
                 col = 14;
                 break;
 
 
-                case 'O':
+                case 'o':
                 col = 15;
                 break;
 
-                case 'P':
+                case 'p':
                 col = 16;
                 break;
 
                 //quit -3 causes program to quit
-                case 'Q':
+                case 'q':
                 col = -3;
                 break;
 
-                //irrelevent data do nothing and keep current player so they can try again
                 default:
-                col = -2;
+                break;
 
                 }
 
 
 
                 //return column number
-
                 return col;
 
 }
