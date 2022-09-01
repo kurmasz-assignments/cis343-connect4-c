@@ -46,7 +46,7 @@ void sample_fail() {
 /////////////////////////////////////////////
 
 //Dan tests////
-void sample_H_bottom(){
+void sample_H_bottom_true(){
 
 int correctOutput[] = {2,2,2,1,1,1};
 int row = 5;
@@ -60,10 +60,10 @@ int array[6][6] =
 {2,2,2,1,1,1}
 };
 
-TEST_ASSERT_EQUAL(correctOutput, getHorizontal(row, size, array));
+TEST_ASSERT_EQUAL(1,compareArrays(correctOutput, getHorizontal(row, size, array)))
 }
 
-void H_top(){
+void H_top_true(){
 
 int correctOutput[] = {1,2,1,1,1,2};
 int row = 0;
@@ -77,7 +77,7 @@ int array[6][6] =
 {-1,-1,-1,-1,-1,-1}
 };
 
-TEST_ASSERT_EQUAL(correctOutput, getHorizontal(row, size, array));
+TEST_ASSERT_EQUAL_true(1,compareArrays(correctOutput, getHorizontal(row, size, array)))
 }
 
 void H_middle(){
@@ -94,7 +94,7 @@ int array[6][6] =
 {-1,-1,-1,-1,-1,-1}
 };
 
-TEST_ASSERT_EQUAL(correctOutput, getHorizontal(row, size, array));
+TEST_ASSERT_EQUAL(1,compareArrays(correctOutput, getHorizontal(row, size, array)))
 }
 
 //GetDiagonal tests//CHECK HOW TO COMPARE ARRAYS
@@ -115,12 +115,7 @@ int width = 6;
 int height = 6;
 int[] actualOutput = getDiagonalUp(StartCol, StartRow, width, height, array);
 
-//check size of arrays
-TEST_ASSERT_EQUAL(getArraySize(actualOutput,correctOutput));
-
-//check content of arrays
-for(int i = 0; i<sizeof correctOutput; i++){
-TEST_ASSERT_EQUAL(correctOutput[i],);
+TEST_ASSERT_EQUAL(1, compareArrays(correctOutput, actualOutput));
 }
 
 //////////Riley tests
