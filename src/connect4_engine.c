@@ -174,3 +174,48 @@ int getColumnNumber(char column){
                 return col;
 
 }
+
+//build board function prints the game board
+void buildBoard(int columns, int rows, int[][]array){
+//array to hold board heading 16 max size
+char heading[] = {'a', 'b', 'b', 'd','e','f','g','h','i','j','k','l','m','n','o'};
+//print board headings
+for(int i = 0; i<columns;i++){
+printf(%c \t, heading[i]);
+}
+
+//print board row by row outer loop
+for(int r = 0; r < rows; r++){
+    //print board column by column inner loop
+    for(int c = 0;c < columns; c++){
+        printf(%d \t, array[r][c]);
+        }
+    }
+}
+
+
+//3 functions below take start data like "3x4 2" and pulls rows, columns, and win length out of string. This datta
+//is sent to create the game board
+
+//getStartWidth takes string and gives width of starting game board
+int getStartWidth(string startData){
+int columns = 0;
+//process start datta string and pull out rows from it
+return columns;
+}
+
+//getStartHeight takes string and gives height of starting game board
+int getStartHight(string startData){
+int rows= 0;
+//process start datta string and pull out columns from it
+return rows;
+}
+
+//getStartHeight takes string and gives height of starting game board
+int getStartWinLength(string startData){
+int winLength = 0;
+//process start datta string and pull out win length from it
+return winLength;
+}
+
+////////////////////////////

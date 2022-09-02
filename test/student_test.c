@@ -177,7 +177,24 @@ void test_alphabet_to_column_QUIT_true(){
     TEST_ASSERT_EQUAL(-3, getColumnNumber(q))
 }
 
+//test to check program input for start of game
+void test_initialization_width(){
+String startData = "3x4 2";
+int width = 3;
+TEST_ASSERT_EQUAL(3,getStartWidth(startData));
+}
 
+void test_initialization_height(){
+String startData = "3x4 2";
+int height = 4;
+TEST_ASSERT_EQUAL(height, getStartHeight(startData));
+}
+
+void test_initialization_winLength(){
+String startData = "3x4 2";
+int winLength = 2;
+TEST_ASSERT_EQUAL(winLength, getStartWinLength(startData));
+}
 
 
 //////////Riley tests
