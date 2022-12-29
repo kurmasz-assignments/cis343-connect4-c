@@ -41,6 +41,8 @@ When implementing your game, you must use this interface (so I can run automated
 4. The columns will be labeled with letters beginning with `A`.  To make a move, each player enters the letter of the desired column and hits enter.  Your program should accept both upper- and lower-case entries.
 5. Given an invalid input (not a letter, letter too large, column is full, etc.), simply print an error message and prompt the user again.  The message need not have a specific format.
 6. If the user enters `q`, immediately print `Goodbye.` and terminate the program.  `Goodbye.` must be the final thing printed on the standard output.
+7. If the entire board fills, print `It's a Draw!` then exit.
+8. I will only test valid board configurations up to 16x16.  (In other words, I won't be testing absurd things like 50x50 boards, or a 2x3 board with a win length of 4.) You may handle these situations however you like.
 
 ### Implementation requirements
 
@@ -48,7 +50,8 @@ When implementing your game, you must use this interface (so I can run automated
    1. Copy a row, column, or diagonal into a separate array.  This is computationally inefficient; but, that's ok for this assignment because we are focusing on the interaction of programming languages and software design.
    2. Use function pointers.  This avoids the copying, but is considerably more difficult.  (When I tried it, I didn't think the code was any better as a result.  Maybe you can come up with a better design.)
 
-**!!! Important #2 !!!** Your game board must be dynamically allocated on the heap (as opposed to statically allocated on the stack). Putting the game board on the heap allows Valgrind to detect if you have any bugs that read and/or write memory outside of the game board.  In order to meet expectations for this assignment, your code will have to run under Valgrind with no memory errors (neither leaks nor out-of-bounds issues).
+**Hint:** Because you need to check for a win after every move, any winning configuration must contain the last token played. Therefore, instead of checking _every_ row, column, and diagonal for a win, only check the rows, columns, and diagonals that contain the most recently-played token.
+
 
 ### Code Quality
 
