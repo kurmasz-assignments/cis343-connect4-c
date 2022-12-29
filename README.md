@@ -108,7 +108,7 @@ check in your code with "[Grade Me]" in the commit message.
 
 ### Use of AI
 
-You may use online help sources like Stack Overflow, provided you include a comment citing the articles used.  You may _not_ use online web sites and services such as UpWork, Chegg, and ChatGPT write code for you. Code written for you, whether by another human or by an algorithm is not permitted.
+You may use online help sources like Stack Overflow, provided you include a comment citing the article(s) used.  You may _not_ use online web sites and services such as UpWork, Chegg, and ChatGPT that write code for you. Code written for you, whether by another human or by an algorithm is not permitted.
 
 ### Unapproved access to instructor material 
 
@@ -117,4 +117,3 @@ One key purpose of the GitHub classroom setup is to automatically verify that su
 Attempting to reverse engineer the sample solution through de-compiling or other means is a serious violation of Academic Honesty and could result in a failing grade in the course.  Similarly, writing tests is an important part of the software development process. The automated tests are a part of this project's "solution".  Attempting to access the specific test cases through means included, but not limited to, de-compiling and print statements is a serious violation of Academic Honesty and could result in a failing grade in the course.
 
 Hiding and/or obfuscating GitHub activity through means such as rebasing, squashing, or outright deleting test runs is a serious violation of Academic Honesty and could result in a failing grade in the course.
-
