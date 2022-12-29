@@ -9,6 +9,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
          - uses: actions/checkout@v3
+         - run: "! grep -L zzNAMEzz src/*.c"
          - run: make
          - run: sudo gem install rspec
          - run: curl https://autograder.computing.gvsu.edu/c4_instructor_spec.rb --output spec/c4_instructor_spec.rb -k
