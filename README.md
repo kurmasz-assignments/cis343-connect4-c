@@ -80,14 +80,12 @@ You must use a Test Driven Development (TDD) workflow and write a complete set o
       1. `make studentTests` will compile your unit tests against your code.
       2. `make c4` will build your game
       3. Running `rspec` from the root directory of the project will run your system tests.
-   4. When your code passes your tests, run it through [Valgrind](https://valgrind.org/) to check for any memory issues (leaks, array overruns, etc.).  (Note:  Valgrind is already installed on EOS.  It will not run on the latest versions of MacOS.)
-      1. Use this command to run your system tests through Valgrind: `C4_EXEC='valgrind ./run_c4'`
-   5. Use the GitHub Action to test your code using _my_ tests.
+   3. Use the GitHub Action to test your code using _my_ tests.
       1. Commit and push your code to GitHub.
       2. From the GitHub web page for your repo, go to the "Actions" tab. 
       3. Look under the blue "All workflows" button and click "Connect 4 Check"
       4. A "Run Workflow" button will appear in the middle of the page. Click on the arrow, select the correct branch, and click the green "Run workflow" button.
-   7. If the tests don't pass, then your code has a bug your tests failed to detect.
+   4. If the tests don't pass, then your code has a bug your tests failed to detect.
          1. Write a failing test.
          2. Fix your code so your new test passes.
          3. Run my tests again. 
@@ -101,15 +99,22 @@ You must use a Test Driven Development (TDD) workflow and write a complete set o
 
 When your initial tests are complete, check in your code with "[Check Tests]" in the commit message.
 
-When your project is complete (has a complete set of tests, has a working game, passes my automated tests, passes Valgrind, and is well-formatted and well-documented), 
+When your project is complete (has a complete set of tests, has a working game, passes my automated tests, and is well-formatted and well-documented), 
 check in your code with "[Grade Me]" in the commit message.
 
 **Important**: Just because your code passes the GitHub tests, does _not_ mean it meets all the requirements. The GitHub tests do not, for example, check the user interface.  They also don't check the completeness of your unit tests or the quality of your code.
 
 ## Academic Honesty
 
+### Use of AI
+
+You may use online help sources like Stack Overflow, provided you include a comment citing the articles used.  You may _not_ use online web sites and services such as UpWork, Chegg, and ChatGPT write code for you. Code written for you, whether by another human or by an algorithm is not permitted.
+
+### Unapproved access to instructor material 
+
 One key purpose of the GitHub classroom setup is to automatically verify that submitted code is bug-free.  Attempting to subvert this system and generate a "false positive" (for example, by modifying files such as the Makefile) is a serious violation of Academic Honesty and could result in a failing grade in the course.
 
 Attempting to reverse engineer the sample solution through de-compiling or other means is a serious violation of Academic Honesty and could result in a failing grade in the course.  Similarly, writing tests is an important part of the software development process. The automated tests are a part of this project's "solution".  Attempting to access the specific test cases through means included, but not limited to, de-compiling and print statements is a serious violation of Academic Honesty and could result in a failing grade in the course.
 
 Hiding and/or obfuscating GitHub activity through means such as rebasing, squashing, or outright deleting test runs is a serious violation of Academic Honesty and could result in a failing grade in the course.
+
