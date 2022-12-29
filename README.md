@@ -2,7 +2,7 @@
 
 This assignment was originally prepared by Prof. Nandigam.
 
-Use this [GitHub Classroom link](https://classroom.github.com/a/mC2Nf2pv) to create a repo for this project.
+Use this [GitHub Classroom link](https://classroom.github.com/a/m44C8JUC) to create a repo for this project.
 
 This video provides an [introduction to Connect 4 and GitHub Classroom](https://youtu.be/nv1R7XPNneM).
 
@@ -66,7 +66,7 @@ You must use a Test Driven Development (TDD) workflow and write a complete set o
 
 ## Assignment Workflow
 
-1. Begin by following this [GitHub Classroom link](https://classroom.github.com/a/mC2Nf2pv) and cloning the resulting repository.
+1. Begin by following this [GitHub Classroom link](https://classroom.github.com/a/m44C8JUC) and cloning the resulting repository.
    1. Your game code will go in the [src](src) directory.  This directory contains shell files that you should put your code in.
       If you use these files, the [Makefile](Makefile) should just work.  If you add/change files, you'll have to also adjust the `Makefile`.
    2. The [spec](spec) directory contains the system tests. These tests use Ruby's [RSpec](https://rspec.info/) framework.  You can add your tests to [c4_student_spec.rb](spec/c4_student_spec.rb), and/or add your own files.
@@ -108,7 +108,7 @@ check in your code with "[Grade Me]" in the commit message.
 
 ### Use of AI
 
-You may use online help sources like Stack Overflow, provided you include a comment citing the article(s) used.  You may _not_ use online web sites and services such as UpWork, Chegg, and ChatGPT that write code for you. Code written for you, whether by another human or by an algorithm is not permitted.
+You may use online help sources like Stack Overflow, provided you include a comment citing the article(s) used.  You may _not_ use online web sites and services such as UpWork, Chegg, and ChatGPT t write code for you. Code written for you, whether by another human or by an algorithm is not permitted.
 
 ### Unapproved access to instructor material 
 
